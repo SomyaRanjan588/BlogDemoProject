@@ -5,6 +5,7 @@ import Homepage from "./pages/homepage";
 import Addproduct from "./pages/addproduct";
 import Editproduct from "./pages/editproduct";
 import Viewproduct from "./pages/viewproduct";
+import Productshow from "./pages/productshow";
 import axios from "axios";
 
 axios.interceptors.request.use(function (config) {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/viewproduct" element={<Viewproduct />} />
         <Route path="/addproduct" element={<Addproduct />} />
         <Route path="/editproduct/:id" element={<Editproduct />} />
+        <Route path="/productshow/:id" element={<Productshow />} />
       </Routes>
     </div>
   );

@@ -25,6 +25,7 @@ function Editproduct() {
   useEffect(() => {
     axios.get(`http://127.0.0.1:8000/api/edit/${params.id}`).then((res) => {
       SetProduct(res.data.product);
+      
     });
   }, []);
 

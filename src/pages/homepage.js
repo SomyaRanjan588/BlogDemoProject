@@ -15,9 +15,7 @@ function Homepage() {
         localStorage.removeItem("auth_token");
 
         navigate(`/`);
-      } else {
-        console.log("token");
-      }
+      } 
     });
   };
   return (
