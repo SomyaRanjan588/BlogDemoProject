@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.addproductmaindiv{
+    max-width: 900px;
+    width:100%;
+    display: flex;
+    margin: auto;
+    margin-top: 80px;
+    box-shadow: 0 0 10px gray;
+    border-radius: 10px;
+    padding: 10px;
+}
+.uploadimages{
+    height: 450px;
+    width:500px;
+}
+.addproductrightdiv{
+    background-color: #aacbff;
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px;
+}
+.addproductrightdiv h1{
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+.addproductrightdiv form{
+    margin-top: 10px;
+}
+.textfields{
+    width: 100%;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    padding:10px;
+    height: 70px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+.filefields{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.addproductrightdiv form button{
+    width: 100%;
+    margin-top: 10px;
+    height: 35px;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    background-color: #007cff;
+    cursor: pointer;
+}
