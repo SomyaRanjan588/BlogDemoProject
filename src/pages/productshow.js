@@ -8,7 +8,6 @@ function Productshow() {
   const params = useParams();
   const [product, setProduct] = useState([]);
   const [showcomment, setShowComment] = useState([]);
-  console.log("comment id", showcomment);
   useEffect(() => {
     axios
       .get(`http://127.0.0.1:8000/api/productdetails/${params.id}`)

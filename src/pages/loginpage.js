@@ -33,12 +33,10 @@ function Loginpage() {
     axios
       .post(`http://127.0.0.1:8000/api/login`, data, axiosConfig)
       .then((res) => {
-        console.log(res)
         if (res.status === 200) {
           navigate(`/homepage`);
-          localStorage.setItem("auth_name",res.data.name);
-          localStorage.setItem("auth_token",res.data.token);
-          console.log(res.data);
+          localStorage.setItem("auth_name", res.data.name);
+          localStorage.setItem("auth_token", res.data.token);
         } else {
           swal("Error", res.data.errors, "error");
         }
